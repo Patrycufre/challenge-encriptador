@@ -1,0 +1,177 @@
+* {
+
+    box-sizing: border-box;
+  }
+   
+  body {
+    padding: 0;
+    margin: 0; 
+
+    min-height: 100vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #8950be;
+    display: flex;
+    flex-direction: column;
+  } 
+
+header{
+  padding: 5px;
+  margin-bottom: 80px;
+}
+
+#cabecera{
+height: 178px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+h1{
+color:  #01060f;
+font-size: 100px;
+}
+
+
+  
+   .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+   }
+
+
+
+#section-encripta{
+  flex: 50%;
+  padding:  5px;
+  
+}
+ 
+
+#section-desencripta{
+  flex: 50%;
+  padding-top:  5px;
+  
+}
+
+#section-resultado{
+  padding-top: 10px;
+}
+  
+.caja-texto{  
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+
+  }
+
+
+textarea{
+  width: 400px;
+  height: 120px;
+  background: #ccd8e0;
+  text-align: center;
+  color:#0f1329;
+  border-radius: 5px;
+  transition: 1s;
+} 
+
+textarea:focus {
+    background:#fff;
+    color: #181616;
+
+  } 
+  
+   ::placeholder {
+    padding: 25px;
+    color:#0f1329;
+  } 
+
+
+   .btn-agregar {
+    background: #a240c0;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    transition: .3s ease all;
+  } 
+
+  .btn-agregar:active {
+  transform: translateY(3px);
+  transition: 0.3s;
+  }
+
+ .btn-agregar:hover {
+    background: #9811c0;
+  } 
+
+
+  #btn-info-copiado{
+  background-color: #9811c0;
+  width: 100px;
+  height: 20px;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 290px;
+  border: none;
+  outline: none;
+  margin-bottom: 1px;
+
+  }
+
+
+  .invisible{
+    opacity: 0;
+    transition: 0.7s;
+  }
+
+
+  .footer{
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+     
+  }
+
+  @media (max-width: 500px) {
+    .footer,#section-desencripta,#section-encripta,#section-resultado{
+     flex: 100%;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+  } 
+
+  @media (max-width: 500px) {
+    textarea{
+      width: 90%;  
+    }
+    header{
+      display: flex;
+      justify-content: center;
+    }
+
+    header{
+      margin-bottom: 0;
+    }
+    #btn-info-copiado{
+    margin-left: 290px;
+    }
+  } 
+
+  @media (max-width: 960px) {
+    h1{
+      display: none;
+    }
+  }
