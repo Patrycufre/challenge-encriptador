@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>challenge encriptador</title>
+    <title>Encriptador</title>
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="encriptador.css"> 
 </head>
 <body>
-    
-</body>
+    <h1>Encriptador de Texto</h1>
+
+<section >
+
+    <img src="./encriptador.jpg" class="" alt="..." width="200" height="150">
+    <label for="text-encriptador">Texto para Encriptar:</label>
+    <textarea id="text-encriptador"></textarea>
+    <button id="btn-encriptar">Encriptar</button>
+</section>
+    <br><br>
+    <br><br>
+<section> 
+    <img src="./encriptador1.jpg" class="" alt="..." width="200" height="150">
+    <label for="text-desencriptador">Texto para Desencriptar:</label>
+    <textarea id="text-desencriptador"></textarea>
+    <button id="btn-desencriptar">Desencriptar</button>
+    <br><br>
+    <br><br>
+</section>
+<section>
+    <img src="./encriptador2.jpg" class="" alt="..." width="200" height="150">
+    <label for="text-resultado">Resultado:</label>
+    <textarea id="text-resultado" readonly></textarea>
+    <button id="btn-copiar">Copiar</button>
+    <div id="btn-info-copiado" class="invisible">Texto copiado!</div>
+    <br><br>
+    <br><br>
+</section>
+    </body>
+
+    <footer class="footer">
+    </footer>
+    <script src="/encriptador.js"></script>
 </html>
